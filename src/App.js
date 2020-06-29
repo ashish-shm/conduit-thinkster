@@ -1,7 +1,7 @@
 import React from 'react';
 
 import AllContent from './Components/AllContent';
-import Navbar from './Components/Navbar';
+
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Error from './Components/Error'
@@ -13,7 +13,7 @@ export default class App extends React.Component{
     return (
       <main>
 
-        <Navbar />
+        
         <Switch>
           <Route path='/' component={AllContent} exact />
           <Route path='/login' component={Login}  />

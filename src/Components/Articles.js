@@ -72,7 +72,7 @@ export default class Articles extends React.Component{
                     <img src={article.author.image} alt={article.author.username} className='authorDp'></img>
                     <ul className='authorTime'>
                     <h3 className='articleAuthor'>Author: {article.author.username}</h3>
-                    <p>{article.createdAt}</p>
+                    <p>{ new Date(article.createdAt).toDateString()}</p>
 
                     </ul>
                     

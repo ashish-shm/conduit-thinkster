@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default class Header extends React.Component{
 
@@ -10,9 +11,16 @@ export default class Header extends React.Component{
                     <h1 className='logo'><a href='/'>conduit</a></h1>
                     <nav>
                         <ul className='header-nav flex'>
-                            <li className='nav-item'><a href='/'>Home</a></li>
-                            <li className='nav-item'><a href='/login'>Sign In</a></li>
-                            <li className='nav-item'><a href='/register'>Sign Up</a></li>
+                            {/* <li className='nav-item'>
+                                <NavLink activeClassName='activeButton' className='navButton' to='/'>Home</NavLink>
+                            </li> */}
+                            <li className='nav-item'>
+                                <NavLink activeClassName='activeButton' className='navButton' to='/login'>Login</NavLink>
+                            </li>
+                            <li className='nav-item'>
+                                
+                                <NavLink activeClassName='activeButton' className='navButton' to='/register'>Register</NavLink>
+                            </li>
                         </ul>
 
                     </nav>
